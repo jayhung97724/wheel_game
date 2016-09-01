@@ -1,0 +1,17 @@
+canvas {
+  margin: 0 auto;
+}
+.modal {
+  text-align: center!important;
+}
+#prizeImage {
+  width: 100%;
+}
+.top.attached {
+  margin-top: 10px!important;
+}
+.segment {
+  border: none!important;
+  background: none!important;
+  box-shadow: none!important;
+}

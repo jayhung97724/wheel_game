@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+  <div class="ui top attached center aligned segment"><h1>中興資訊社｜社博抽獎囉</h1></div>
+  <div class="ui center aligned equal width grid">
+    <div class="stretched row">
+      <div class="twelve wide column">
+        <div class="ui segment" id="wheel" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header">Congratulations!</div>
+    <div class="content">
+      <img id="prizeImage" src="">
+      <div class="description">
+        <h4>恭喜你抽到</h4>
+        <h3 id="prizeName"></h3>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.6/phaser.min.js" charset="utf-8"></script>
+<script src="./js/wheel.js" charset="utf-8"></script>
+</html>
