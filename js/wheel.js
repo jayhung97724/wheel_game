@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 	// the game itself
 	var game;
 	// the spinning wheel
-	var wheel; 
+	var wheel;
 	// can the wheel spin?
 	var canSpin;
 	// slices (prizes) placed in the wheel
@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 	var prizeText;
 	var zoom = 1.35;
 
-	window.onload = function() {  
+	window.onload = function() {
 			// creation of a 458x488 game
 			game = new Phaser.Game(620, 620, Phaser.AUTO, 'wheel');
 			// adding "PlayGame" state
@@ -25,15 +25,15 @@ jQuery(document).ready(function($) {
 	}
 
 	// PLAYGAME STATE
-	 
+
 	var playGame = function(game){};
 
 	playGame.prototype = {
 			// function to be executed once the state preloads
 			preload: function(){
 					 // preloading graphic assets
-					 game.load.image("wheel", "wheel.png");
-					 game.load.image("pin", "pin.png");     
+					 game.load.image("wheel", "./img/wheel.png");
+					 game.load.image("pin", "./img/pin.png");
 			},
 			// funtion to be executed when the state is created
 		 create: function(){
@@ -58,12 +58,12 @@ jQuery(document).ready(function($) {
 					 // the game has just started = we can spin the wheel
 					 canSpin = true;
 					 // waiting for your input, then calling "spin" function
-					 game.input.onDown.add(this.spin, this);   
+					 game.input.onDown.add(this.spin, this);
 	 },
 			// function to spin the wheel
 			spin(){
 					 // can we spin the wheel?
-					 if(canSpin){  
+					 if(canSpin){
 								// resetting text field
 								// prizeText.text = "";
 								// the wheel will spin round from 2 to 4 times. This is just coreography
