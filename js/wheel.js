@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
 	var prize;
 	// text field where to show the prize
 	var prizeText;
-	var zoom = 1.35;
+	var zoom = 1;
 
 	window.onload = function() {
 			// creation of a 458x488 game
