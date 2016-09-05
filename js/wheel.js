@@ -6,9 +6,9 @@ jQuery(document).ready(function($) {
 	// can the wheel spin?
 	var canSpin;
 	// slices (prizes) placed in the wheel
-	var slices = 8;
+	var slices = 10;
 	// prize names, starting from 12 o'clock going clockwise
-	var slicePrizes = ["A KEY!!!", "50 STARS", "500 STARS", "BAD LUCK!!!", "200 STARS", "100 STARS", "150 STARS", "BAD LUCK!!!"];
+	var slicePrizes = ["書籤", "糖果", "書籤", "糖果", "網路線", "書籤", "糖果", "書籤", "糖果", "L夾"];
 	// the prize you are about to win
 	var prize;
 	// text field where to show the prize
@@ -89,7 +89,8 @@ jQuery(document).ready(function($) {
 					 canSpin = true;
 					 // writing the prize you just won
 					 // prizeText.text = slicePrizes[prize];
-           $('#prizeImage').attr('src', './img/01.png');
+
+           $('#prizeImage').attr('src', './img/' + slicePrizes[prize] + '.png');
 					 $('.ui.modal').modal('show');
            $('#prizeName').text(slicePrizes[prize]);
 					 return console.log(slicePrizes[prize]);
