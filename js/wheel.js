@@ -91,9 +91,11 @@ jQuery(document).ready(function($) {
 					 // prizeText.text = slicePrizes[prize];
 
            $('#prizeImage').attr('src', './img/' + slicePrizes[prize] + '.png');
-					 $('.ui.modal').modal('show');
-           $('#prizeName').text(slicePrizes[prize]);
-					 return console.log(slicePrizes[prize]);
+					 $('#prizeImage').load(function(){
+						 $('.ui.modal').modal('show');
+						 $('#prizeName').text(slicePrizes[prize]);
+						 return console.log(slicePrizes[prize]);
+					 });
 			}
 	}
 	// game.new($(document).width(), $(document).height(), 'wheel');
