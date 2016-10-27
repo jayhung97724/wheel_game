@@ -22,7 +22,7 @@ canvas {
           justify-content: center;
 }
 #title {
-  height: 10%;
+  height: 5%;
 }
 #main {
   width: 100%;
@@ -32,5 +32,6 @@ canvas {
   text-align: center!important;
 }
 #prizeImage {
-  width: 100%;
+  width: 90%;
+  height: 90%;
 }
